@@ -11,7 +11,7 @@ use App\Http\Controllers\ReportController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('dashboard');
 
 //hotel system admin
 Route::get('/hotels/create', function () {

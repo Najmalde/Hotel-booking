@@ -23,6 +23,7 @@ class RoomSearch extends Component
         'check_in' => 'required|date|after:yesterday',
         'check_out' => 'required|date|after:check_in',
     ];
+    
     public function search()
     {
         $query = Room::where('status', 'Available')
